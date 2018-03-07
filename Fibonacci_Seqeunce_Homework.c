@@ -44,8 +44,8 @@ int main(int argc, const char * argv[]) {
         function_start_time = clock(); // 시작시간 계산
         printf("재귀순환으로 구한 피보나치수열의 합은 = %d\n",Fibonacci_Recursive(caculation_num));
         function_finish_time = clock(); // 종료시간계산
-        duration = (double)(function_finish_time-function_start_time); // 단위는 per sec으로 시간을구한다
-        printf("재귀순환으로 소요된 시간은= %f초입니다.\n",duration);
+        duration = (double)(function_finish_time-function_start_time); // 단위는 microsec으로 시간을구한다
+        printf("재귀순환으로 소요된 시간은= %msec초입니다.\n",duration);
     }
     
     else if(select_num==2){
@@ -55,8 +55,8 @@ int main(int argc, const char * argv[]) {
         function_start_time = clock(); // 시작시간 계산
         printf("반복문으로 구한 피보나치수열의 합은 = %d\n",Fibonacci_Loop(caculation_num));
         function_finish_time = clock(); // 종료시간계산
-        duration = (double)(function_finish_time-function_start_time); // 단위는 per sec으로 시간을구한다
-        printf("문복문으로 소요된 시간은= %f초입니다.\n",duration);
+        duration = (double)(function_finish_time-function_start_time); // 단위는 microsec으로 시간을구한다
+        printf("문복문으로 소요된 시간은= %fmsec입니다.\n",duration);
     }
     else return printf("잘못선택하셨습니다/n");
     
