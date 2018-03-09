@@ -12,12 +12,13 @@
  */
 
 
-//이슈 클럭함수를 어디다 선언할까 메인문에?
+
 
 #include <stdio.h>
 #include <time.h>
 
-int Fibonacci_Recursive(int num);
+// 함수선언 재귀방법과 루프를 
+int Fibonacci_Recursive(int num); 
 int Fibonacci_Loop(int num);
 
 
